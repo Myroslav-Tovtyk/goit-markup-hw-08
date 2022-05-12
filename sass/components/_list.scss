@@ -1,0 +1,118 @@
+.list{
+    display:flex;
+
+    &__item{
+    width: calc((100% - 5.625rem) / 4);
+    }
+
+    &__item:not(:last-child){
+    margin-right: 1.875rem;
+    }
+
+    &__descript-title{
+    font-weight: 700;
+    font-size: 0.875rem;
+    line-height: 1.143rem;
+    text-transform: uppercase;
+    color: $title-text-color;
+
+    margin-top: 1.875rem;
+    margin-bottom: 0.625rem;
+    }
+
+    &__container{
+    display: flex;
+    width: 16.875rem;
+    height: 7.5rem;
+    align-items: center;
+    justify-content: center;
+    background-color: $section-svg-bgd;
+    }
+
+    &__img-item:not(:last-child){
+    margin-right: 1.875rem;
+    }
+
+    &__img-item{
+    position: relative;
+    }
+
+    &__doing-item{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 23.125rem;
+    height: 4.375rem;
+    color: $white-color;
+    background-color: rgba(47, 48, 58, 0.8);
+    box-shadow:
+        0px 4px 4px 0px rgba(0, 0, 0, 0.25),
+        0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+    font-weight: 700;
+    font-size: 0.875rem;
+    line-height: 1.14;
+    text-transform: uppercase;
+    }
+
+    &__team-title{
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.19rem;
+    text-align: center;
+    color: $title-text-color;
+    
+    padding-bottom: 0.625rem;
+    }
+
+    &__team-position{
+    font-size: 1rem;
+    line-height: 1.19rem;
+    text-align: center;
+
+    margin-bottom: 1rem;
+    }
+
+    &__item--shadowed{
+    background-color: $white-color;
+    box-shadow: 
+        0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;  
+    }
+
+    &__clients-item:not(:last-child){
+    margin-right: 1.875rem;
+    }
+
+    &__clients-link {
+    fill: $socials-svg-color; 
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    }
+
+    &__clients-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10.625rem;
+    height: 5.75rem;
+    border: 0.0625rem solid $socials-svg-color;
+    border-radius: 0.25rem; 
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__clients-link:hover, :focus{
+    border-color: $accent-color;  
+    }
+
+    &__clients-link:hover, :focus + &__clients-svg{            
+        fill: $accent-color;
+    }            
+
+}

@@ -1,0 +1,14 @@
+.address{
+    font-style: normal;
+    color: $white-color;
+
+    &__street{
+    margin-top: 1.25rem;
+    margin-bottom: 0.56rem;
+    }
+
+    &__phone {
+    display: block;  
+    margin-top: 0.56rem;
+    }
+}

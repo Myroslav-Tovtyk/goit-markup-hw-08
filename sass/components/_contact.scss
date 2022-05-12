@@ -1,0 +1,21 @@
+.contact{
+    display: flex;
+    margin-left: auto;
+
+        &__item:not(:last-child){
+    margin-right: 1.875rem;
+    }
+
+        &__link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: $primary-text-color;
+    }
+
+        &__img{
+    margin-right:0.625rem;
+    fill: currentColor;
+    }
+}

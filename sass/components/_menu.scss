@@ -1,0 +1,12 @@
+.menu{
+    display: flex;    
+    margin-left: 5.812rem;
+
+        &__item:not(:last-child){
+    margin-right: 3.125rem;
+    }
+    
+        &__link{
+    position: relative;
+    }
+}

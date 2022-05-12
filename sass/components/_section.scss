@@ -1,0 +1,16 @@
+.section{
+    padding-top: 5.875rem; 
+    padding-bottom: 5.875rem;
+
+    &:nth-child(2){
+    padding-bottom:0;
+    }
+
+    &--colored{
+    padding-top: 5.875rem;
+    padding-bottom: 5.875rem;
+    background-color: $section-svg-bgd;
+    }
+
+    
+}

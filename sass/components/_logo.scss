@@ -1,0 +1,26 @@
+.logo{
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 1.625rem;
+    line-height: 1.192;
+    text-decoration: none;
+    color: $logo-color;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,:focus{
+            color: $accent-color;
+        }
+&--accent{
+    color: $accent-color;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+        &--accent:hover,:focus{
+            color: $logo-color;
+        }
+&--inverted-color{
+    color: $white-color;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+        &--inverted-color:hover,:focus{
+            color: $logo-color;
+        }
+}
