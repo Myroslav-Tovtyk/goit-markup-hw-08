@@ -1,22 +1,27 @@
 .card-list{
-    display: flex;
-    flex-wrap: wrap;
+    margin-bottom: -30px;
+    @media screen and(min-width: 768px) {
+        display:flex;
+        flex-wrap: wrap;
+        margin-left: -30px;        
+        }
+
     
-    &__item{
-    width: calc((100% - 3.75rem) / 3);
-    margin-right: 1.875rem;
-    margin-bottom: 1.875rem;
-    }
-
-    &__item:nth-child(3n){
-    margin-right: 0;
-    }
-
-    &__item:nth-child(n+7){
-    margin-bottom: 0;
+    &__item{    
+    margin-bottom: 30px;
+    @media screen and(min-width: 768px){
+        width: calc(100% / 2 - 30px);
+        margin-left: 30px;
+        }
+    @media screen and(min-width: 1200px){
+        width: calc(100% / 3 - 30px);        
+        }
     }
 
     &__link{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     text-decoration: none;
     }
 
@@ -31,7 +36,9 @@
     }
 
     &__name{
-    width: 23.125rem;  
+    // width: 100%;
+    
+    flex-grow: 1;
     padding: 1.25rem 1.5rem;
     border: $border-color solid 0.0625rem; 
     }
@@ -54,7 +61,7 @@
 
     &__container{
     position: relative;
-    overflow: hidden;
+    overflow: hidden;    
     }
 
     &--hovered{
