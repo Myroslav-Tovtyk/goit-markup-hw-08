@@ -1,7 +1,16 @@
 .container {
-    width: 75rem;  
+    width: 100%;  
     margin: 0 auto;  
     /* background-color: lime; */
     padding-left: 0.94rem;
     padding-right: 0.94rem;
+        @media screen and(min-width: 480px) {
+            width: 450px;
+        }
+        @media screen and(min-width: 768px) {
+            width: 768px;
+        }
+        @media screen and(min-width: 1200px) {
+            width: 1200px;
+        }
 }

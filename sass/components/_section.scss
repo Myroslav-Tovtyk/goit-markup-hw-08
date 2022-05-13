@@ -1,16 +1,31 @@
 .section{
-    padding-top: 5.875rem; 
-    padding-bottom: 5.875rem;
+    // padding-top: 5.875rem; 
+    // padding-bottom: 5.875rem;
+    padding-top: 60px;
+    padding-bottom: 60px;
 
-    &:nth-child(2){
-    padding-bottom:0;
-    }
+    @media screen and(min-width: 1200px) {
+        padding-top: 5.875rem; 
+        padding-bottom: 5.875rem;
+        }
 
     &--colored{
-    padding-top: 5.875rem;
-    padding-bottom: 5.875rem;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
     background-color: $section-svg-bgd;
+
+        @media screen and(min-width: 1200px) {
+            padding-top: 5.875rem; 
+            padding-bottom: 5.875rem;
+        }
     }
 
-    
+    &-doing {
+    padding-top: 0;
+    display: none;
+        @media screen and(min-width: 1200px) {
+            display: block;
+        }
+    }
 }

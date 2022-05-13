@@ -1,20 +1,30 @@
 .section-hero{
-    background-color: $footer-bgd; 
+    background-color: $footer-bgd;
 
-    padding-top: 12.5rem;  
-    padding-bottom: 12.5rem;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    @media screen and (min-width: 1200px){
+        padding-top: 12.5rem;  
+        padding-bottom: 12.5rem;
+    }
 
-        &__title{
-        width: 43.75rem;
+        &__title{     
+        max-width: 360px;
         color: $white-color; 
         margin: 0 auto; 
         margin-bottom: 1.875rem;  
 
         font-weight: 900;
-        font-size: 2.75rem;
-        line-height: 1.36;
+        font-size: 26px;
+        line-height: 1.62;
+
         text-align: center;
         letter-spacing: 0.06em;
         text-transform: uppercase;
+        @media screen and (min-width: 1200px) {
+            max-width: 696px;
+            font-size: 2.75rem;
+            line-height: 1.36;
+            }
         }
 }
