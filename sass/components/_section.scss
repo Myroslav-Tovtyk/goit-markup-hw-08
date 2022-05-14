@@ -1,6 +1,4 @@
-.section{
-    // padding-top: 5.875rem; 
-    // padding-bottom: 5.875rem;
+.section{    
     padding-top: 60px;
     padding-bottom: 60px;
 
@@ -8,24 +6,23 @@
         padding-top: 5.875rem; 
         padding-bottom: 5.875rem;
         }
-
-    &--colored{
+}
+.section--colored{
     padding-top: 60px;
     padding-bottom: 60px;
 
     background-color: $section-svg-bgd;
 
-        @media screen and(min-width: 1200px) {
-            padding-top: 5.875rem; 
-            padding-bottom: 5.875rem;
-        }
+    @media screen and(min-width: 1200px) {
+        padding-top: 5.875rem; 
+        padding-bottom: 5.875rem;
     }
+}
 
-    &-doing {
+.section-doing {
     padding-top: 0;
     display: none;
         @media screen and(min-width: 1200px) {
             display: block;
         }
-    }
 }

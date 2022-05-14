@@ -1,21 +1,31 @@
 .contact{
     display: none;
-    margin-left: auto;
+    @media screen and(min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 84px;
+        }
+}
 
-        &__item:not(:last-child){
+.contact__item:not(:last-child) {
     margin-right: 1.875rem;
-    }
+    @media screen and(min-width: 768px) {
+        margin-bottom: 10px;
+        }
+    @media screen and(min-width: 1200px) {
+        margin-bottom: 0;
+        }
+}
 
-        &__link{
+.contact__link{
     display: flex;
     align-items: center;
     justify-content: center;
 
     color: $primary-text-color;
-    }
+}
 
-        &__img{
+.contact__img{
     margin-right:0.625rem;
     fill: currentColor;
-    }
 }
