@@ -55,19 +55,31 @@
 }
 
 .form__link-policy{
-    font-size: 0.875rem;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     color: $accent-color;
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.71;
+    }
+    
 }
 
 .form__label-checkbox{
     display: block;
-    font-size: 0.875rem;
-    line-height: 1.71; 
-    margin-top: 1.25rem;
-    margin-bottom: 1.875rem;
-    margin-left: 2.19rem;
+    font-size: 12px;
+    line-height: 1.17; 
+    padding-top: 1.25rem;
+    padding-bottom: 1.875rem;
+    padding-left: 0.5rem;
+    text-align: right;
+    @media screen and (min-width: 1200px) {
+        text-align: center;
+        font-size: 14px;
+        line-height: 1.71;
+    }
+    
 }
 
 .form__checkbox-custom{
@@ -78,12 +90,12 @@
     border: 0.125rem solid $title-text-color;
     border-radius: 0.25rem;
     @media screen and (min-width: 480px){
-        top: 29.1rem;
-        left: 3.44rem;
+        top: 28.9rem;
+        left: 2.6rem;
     }
     @media screen and (min-width: 1200px){
         top: 27.69rem;
-        left: 3.44rem;
+        left: 3rem;
     }  
     
 }
